@@ -1,0 +1,12 @@
+name: Graftcode MCP
+generated: '2026-10-12'
+method: searched
+source: https://docs.graftcode.com/quick-start/expose-mcp
+status: self-hosted-capability
+description: Graftcode does not run a hosted MCP server of its own tools. Its Graftcode Gateway (gg) automatically exposes an MCP endpoint for the user's own hosted service (static public methods become MCP tools), on port 81 at /mcp (e.g. http://localhost:81/mcp). With a Project Key, the portal provides a stable MCP URL.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+  note: The MCP endpoint is a feature of the customer-run gateway, not a Graftcode-operated agent surface; no endpoint is recorded because none is provider-hosted for Graftcode's own platform.
+tools: []

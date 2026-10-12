@@ -1,0 +1,14 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://graftcode.com/api/blog/posts",
+      "service-doc": [{ "href": "https://graftcode.com/blog", "title": "Graftcode blog" }],
+      "status": [{ "href": "https://graftcode.com/" }]
+    },
+    {
+      "anchor": "https://graftcode.com/api/discord/members",
+      "service-doc": [{ "href": "https://graftcode.com/", "title": "Graftcode community" }],
+      "status": [{ "href": "https://graftcode.com/" }]
+    }
+  ]
+}

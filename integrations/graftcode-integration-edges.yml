@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/graftcode/integrations
+- https://n8n.io/integrations/graftcode/
+- https://composio.dev/toolkits/graftcode
+- https://monid.ai/tools/graftcode
+checked:
+- https://composio.dev/toolkits/graftcode
+- https://monid.ai/tools/graftcode
+- https://n8n.io/integrations/graftcode/
+- https://zapier.com/apps/graftcode/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

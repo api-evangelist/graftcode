@@ -1,0 +1,39 @@
+name: Graftcode Packages
+generated: '2026-10-12'
+method: searched
+source: https://registry.npmjs.org/graftcode-context
+packages:
+- name: graftcode-gateway (gg)
+  registry: github-releases
+  url: https://github.com/grft-dev/graftcode-gateway/releases
+  language: multi
+  official: true
+  version: v1.4.9
+  published: '2026-10-05'
+  note: Gateway binary (gg) installed from GitHub release .deb assets per docs.graftcode.com/quick-start/expose-mcp.
+- name: graftcode-context
+  registry: npm
+  url: https://www.npmjs.com/package/graftcode-context
+  language: javascript
+  official: true
+  version: 1.0.3
+  published: '2026-09-14'
+  note: Published by npm user grft.
+  ownership_audit: metadata names graftcode.com
+- name: Graftcode.Context
+  registry: nuget
+  url: https://www.nuget.org/packages/Graftcode.Context
+  language: csharp
+  official: false
+  version: 1.0.3
+  published: '2026-09-14'
+  ownership_audit: 'registry metadata names neither the provider''s domain nor its GitHub org: official downgraded (harvest-packages.py --audit)'
+- name: graftcode-context
+  registry: pypi
+  url: https://pypi.org/project/graftcode-context/
+  language: python
+  official: true
+  version: 1.0.3
+  published: '2026-09-14'
+  note: Repository URL points at dev.azure.com/graftcode.
+  ownership_audit: metadata names graftcode.com

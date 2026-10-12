@@ -1,0 +1,63 @@
+# Graftcode
+ 
+> Graftcode is an integration-free development layer: a cross-runtime communication layer that lets you call methods across languages without APIs, queues, or SDKs. It connects your modules as if they were all written in one shared codebase — no glue code, no plumbing, just logic.
+ 
+Turn any public methods into a callable API with strongly typed clients installed via your package manager. Connect any code, with no APIs, and call remote services as a local dependency.
+ 
+Key idea: 30–40% of engineering time is lost on API plumbing, DTOs, queues, and versioning. Graftcode removes that integration layer so teams (and AI agents) can focus on business logic instead of wiring services together.
+ 
+## What Graftcode does
+ 
+- One-command connectivity: Use a single package manager command to get an always up-to-date client for any remote service — regardless of methods exposed, technology used, or integration scenario.
+- Automatic strong typing: Strongly-typed clients for every service, auto-generated and auto-updated for seamless IDE autocompletion.
+- Cross-language execution: Run Python, .NET, Java, PHP, Ruby, Node.js, Go, or C++ modules side-by-side in a single process.
+- Monolith to microservice: Switch the invocation target through simple configuration (code settings, env variables, or config files) to move between monolith and microservices — a true modular monolith experience.
+- Independence from infrastructure: Code communicates through target method signatures instead of integration-specific logic, staying independent from platforms, data buses, and cloud PaaS.
+- Ready for the era of AI: Let AI build, orchestrate, and refactor microservices by removing integration complexity and saving code-generation tokens.
+- Out-of-the-box MCP hosting: Spin up MCP or custom service endpoints instantly, deployable anywhere — from local machines to cloud or containers.
+ 
+## How it works (3 steps)
+ 
+- Run the gateway: Download and run a lightweight Graftcode Gateway with your backend/service. It automatically exposes all your public classes and methods and provides the Graftcode Vision portal.
+- Generate your graft: Copy the command for your package manager and import the service as a local dependency — no REST/gRPC/PaaS client code. A compatible client package is generated within milliseconds and refreshes whenever the target API evolves.
+- Call any method, anywhere: Import the required classes and call target methods through a strongly-typed interface, decoupled from the integration technology. Switch PaaS channel, communication protocol, or integration architecture with a simple config change in production.
+ 
+## Results (stats)
+ 
+- ~70% faster than a web service at runtime.
+- ~1/8 of the CPU consumption for the same number of calls vs gRPC and REST.
+- 20 coding languages supported.
+- 10 package managers supported.
+ 
+## Compatibility
+ 
+- Languages: C#, Java, Clojure, Kotlin, Groovy, Perl, Python, Ruby, JavaScript, TypeScript, Go, C++.
+- Operating systems: Windows, Apple/macOS, Linux, Android, iOS.
+- Package managers: npm, PyPI, Maven, CPAN, RubyGems, NuGet, Packagist, C++, Go Modules.
+- Infrastructure: AWS, Azure, Docker, GCP, Kubernetes.
+ 
+## Get started
+ 
+- [Quickstart](https://docs.graftcode.com/quick-start): Guided setup to connect your first service.
+- [Documentation](https://docs.graftcode.com): Full product documentation in Graftcode Academy.
+- [Create a free account (Portal)](https://portal.graftcode.com): Monitor services exposed via the Graftcode Gateway, track hosted modules and grafts, and add private artifact feeds.
+ 
+## MCP & AI agents
+ 
+- [MCP use case](https://graftcode.com/use-cases/mcp): How Graftcode exposes services as MCP tools for AI agents.
+- [Expose an MCP server (quickstart)](https://docs.graftcode.com/quick-start/expose-mcp): Turn your service into an MCP endpoint.
+- [MCP hosting & AI tools (docs)](https://docs.graftcode.com/integration-patterns/mcp-hosting-and-ai-tools): Integration patterns for MCP hosting.
+ 
+## Community
+ 
+- [GitHub](https://github.com/grft-dev): Source and contributions.
+- [Discord](https://discord.gg/2tWb3BAE36): Join the conversation with the grafters community.
+- [LinkedIn](https://www.linkedin.com/company/graftcode/): Company updates.
+- [Twitter / X](https://x.com/Graftcode): Follow along.
+- [Blog](https://graftcode.com/blog): Articles and updates.
+ 
+## Optional
+ 
+- [Terms of Service](https://graftcode.com/terms)
+- [Privacy Policy](https://graftcode.com/privacy-policy)
+- [Cookie Policy](https://graftcode.com/cookie-policy)

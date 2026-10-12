@@ -1,23 +1,92 @@
 aid: graftcode
 name: Graftcode
-description: 'Graftcode is a company surfaced via the API Evangelist harvest backlog (source: manual)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Graftcode (Graftcode S.A.) builds an integration-free development layer: the Graftcode Gateway (gg) exposes the public classes and methods of a service written in Python, .NET, Java, JavaScript, Go, Ruby, PHP or C++ and lets other applications install a strongly-typed client (a Graft) through their own package manager, communicating over the binary Hypertube protocol instead of REST or gRPC. The gateway also serves the Graftcode Vision explorer and automatically exposes an MCP endpoint so AI agents can call the hosted methods. Graftcode publishes no public HTTP API or OpenAPI contract of its own.'
 url: https://raw.githubusercontent.com/api-evangelist/graftcode/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:manual
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-12 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-12'
 modified: '2026-10-12'
 tags:
 - Company
-apis: []
+- Developer Tools
+- Integration
+- Cross-Language
+- MCP
+- Microservices
+- Code Generation
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+image: https://graftcode.com/assets/Integrations/pulsing-logo.png
 common:
+- type: CLI
+  url: cli/graftcode-cli.yml
+- type: LLMsTxt
+  url: llms/graftcode-llms.txt
+- type: WellKnown
+  url: well-known/graftcode-well-known.yml
+- type: Hosts
+  url: hosts/graftcode-hosts.yml
+- type: Vendors
+  url: vendors/graftcode-vendors.yml
+- type: SDKs
+  url: packages/graftcode-packages.yml
+- type: Packages
+  url: packages/graftcode-packages.yml
 - type: Website
   url: https://graftcode.com/
+- type: Documentation
+  url: https://academy.graftcode.com/documentation/
+- type: APIReference
+  url: https://docs.graftcode.com/reference/quick-reference
+- type: GettingStarted
+  url: https://academy.graftcode.com/quick-start
+- type: Blog
+  url: https://graftcode.com/blog
+- type: GitHubOrganization
+  url: https://github.com/grft-dev
+- type: SignUp
+  url: https://portal.graftcode.com/
+- type: Support
+  url: https://discord.gg/2tWb3BAE36
+- type: TermsOfService
+  url: https://graftcode.com/terms
+- type: PrivacyPolicy
+  url: https://graftcode.com/privacy-policy
+- type: DomainSecurity
+  url: security/graftcode-domain-security.yml
+apis:
+- aid: graftcode:graftcode-gateway
+  name: Graftcode Gateway
+  description: Self-hosted gateway (gg) that discovers public methods of a service and exposes them as Grafts over the Hypertube protocol, through Graftcode Vision, and as an MCP endpoint. It runs on the customer machine or container; there is no Graftcode-hosted API base URL.
+  humanURL: https://docs.graftcode.com/
+  tags:
+  - Gateway
+  - MCP
+  - Cross-Language
+  properties:
+  - type: Documentation
+    url: https://docs.graftcode.com/
+  - type: GettingStarted
+    url: https://docs.graftcode.com/quick-start
+  image: https://graftcode.com/assets/Integrations/pulsing-logo.png
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-12'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://graftcode.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-12'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v5

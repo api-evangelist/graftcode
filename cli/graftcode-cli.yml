@@ -1,0 +1,10 @@
+name: Graftcode Gateway CLI
+generated: '2026-10-12'
+method: searched
+source: https://docs.graftcode.com/quick-start/expose-mcp
+install: wget -O gg.deb "https://github.com/grft-dev/graftcode-gateway/releases/latest/download/gg_linux_${TARGETARCH}.deb" && dpkg -i gg.deb
+commands:
+- command: gg ./package.json
+  description: Reads package.json, discovers public methods, exposes them as Grafts (port 80) and Graftcode Vision plus MCP endpoint (port 81).
+- command: gg ./package.json --projectKey YOUR_PROJECT_KEY
+  description: Run the gateway with a portal Project Key for stable MCP and registry URLs and access control.
