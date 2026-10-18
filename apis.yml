@@ -66,6 +66,10 @@ apis:
   description: Self-hosted gateway (gg) that discovers public methods of a service and exposes them as Grafts over the Hypertube protocol, through Graftcode Vision, and as an MCP endpoint. It runs on the customer machine or container; there is no Graftcode-hosted API base URL.
   humanURL: https://docs.graftcode.com/
   tags:
+  - Gateways
+  - MCP
+  - Cross-Language
+  tags_raw:
   - Gateway
   - MCP
   - Cross-Language
